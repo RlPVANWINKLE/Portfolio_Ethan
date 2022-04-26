@@ -24,7 +24,7 @@
             <v-row>
               <v-col cols="6" md="6">
                 <v-row class="pa-5">
-                  <v-progress-linear v-for="(lang, index) in languages" :key="index" color="amber lighten-2" buffer-value="0" v-model="lang.knowledge" stream height="25" class="h4 "><strong>{{lang.name}} - {{lang.knowledge}}%</strong></v-progress-linear>
+                  <v-progress-linear background-color="grey lighten-1" v-for="(lang, index) in languages" :key="index"  color="amber"  buffer-value="100" striped v-model="lang.knowledge" height="25" class="h4 "><strong>{{lang.name}} - {{lang.knowledge}}%</strong></v-progress-linear>
                 </v-row>
               </v-col>
               <v-col cols="6" md="6" class="mx-auto my-auto px-10">                
@@ -60,13 +60,13 @@
         </v-timeline-item>
       </v-timeline>
     </v-container>
-    <v-container class="card">
-      <v-card class="grey pa-10" >
-        <v-card-title class="justify-center h2 white--text">My Projects</v-card-title>
+    <v-container class="">
+      <v-card class=" pa-10" >
+        <v-card-title class="justify-center h2 grey--text text--darken-2">My Projects</v-card-title>
         <v-row>
-          <v-card hover max-width="25%" tile class="mt-10 mx-auto wrap" v-for="(card, index) in cards" :key="index">
-          <v-img :src="card.pic" class="align-end">
-          <v-card-title class="justify-center white">{{card.title}}</v-card-title>
+          <v-card  hover tile class="mt-10 mx-auto wrap card-1" v-for="(card, index) in cards" :key="index" router :href="card.href">
+          <v-img contain rounded :src="card.pic" class="align-end card-img">
+          <v-card-title class="justify-center grey darken-2 white--text" border="top"  >{{card.title}}</v-card-title>
           </v-img>
         </v-card>
         </v-row>
@@ -119,7 +119,7 @@
   }
   .h4{
     font-size: 1.5rem;
-    border-top: 1px solid black;
+    border: 2px solid black;
     margin-top: 15px;
   }
   .h4-1{
@@ -129,6 +129,10 @@
     margin-top: 20vh;
 
   }
+  .card-1{
+    width: 25%;
+  }
+
 }
 .animate__animated.animate__backInRight{
   --animate-duration: 3s;

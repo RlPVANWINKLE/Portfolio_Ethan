@@ -77,51 +77,23 @@ export const languages = [
   ]
   export const cards = [
       {
-          pic: require("../images/profile.png"),
-          title: "Ogden Weber Tech College"
+          pic: require("../images/OTech.png"),
+          title: "Ogden Weber Tech College",
+          href: "https://keen-pothos-8bdfa1.netlify.app/#/"
       },
       {
-        pic: require("../images/profile.png"),
-        title: "Ogden Weber Tech College"
+        pic: require("../images/painting.png"),
+        title: "Bubba's Painting",
+        href: "https://bubbaspainting.netlify.app/#/"
     },
     {
-        pic: require("../images/profile.png"),
-        title: "Ogden Weber Tech College"
+        pic: require("../images/oscars.png"),
+        title: "Oscars Meats",
+        href: ""
     },
     {
-        pic: require("../images/profile.png"),
-        title: "Ogden Weber Tech College"
+        pic: require("../images/calc.png"),
+        title: "Math Practice",
+        href: ""
     },
-    {
-        pic: require("../images/profile.png"),
-        title: "Ogden Weber Tech College"
-    },
-    {
-        pic: require("../images/profile.png"),
-        title: "Ogden Weber Tech College"
-    },
-    {
-        pic: require("../images/profile.png"),
-        title: "Ogden Weber Tech College"
-    },
-    {
-        pic: require("../images/profile.png"),
-        title: "Ogden Weber Tech College"
-    },
-    {
-        pic: require("../images/profile.png"),
-        title: "Ogden Weber Tech College"
-    },
-    {
-        pic: require("../images/profile.png"),
-        title: "Ogden Weber Tech College"
-    },
-    {
-        pic: require("../images/profile.png"),
-        title: "Ogden Weber Tech College"
-    },
-    {
-        pic: require("../images/profile.png"),
-        title: "Ogden Weber Tech College"
-    }
   ]
