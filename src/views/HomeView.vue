@@ -2,7 +2,7 @@
   <v-container >
     <v-row align="center" justify="center"> 
       <v-col cols="6" md="4">
-        <h1 class=" h1 white--text text-left animate__animated animate__backInRight " >  Hello, <br> I'm Ethan  </h1>
+        <h1 class=" h1 white--text text-left animate__animated animate__fadeInLeft " >  Hello, <br> I'm Ethan  </h1>
       </v-col>
       <v-col cols="6" md="4">
         <v-img src="../images/profile.png" class="rounded-circle h1" max-width="100%"></v-img>
@@ -24,15 +24,10 @@
             <v-row>
               <v-col cols="6" md="6">
                 <v-row class="pa-5">
-                  <v-list-item>
-                    <v-list-item-content>
-                      <v-list-item-title v-for="(lang, index) in languages" :key="index" class="text-center h4 amber py-2">{{lang}}</v-list-item-title>
-                    </v-list-item-content>
-                  </v-list-item>
+                  <v-progress-linear v-for="(lang, index) in languages" :key="index" color="amber lighten-2" buffer-value="0" v-model="lang.knowledge" stream height="25" class="h4 "><strong>{{lang.name}} - {{lang.knowledge}}%</strong></v-progress-linear>
                 </v-row>
               </v-col>
-              <v-col cols="6" md="6" class="mx-auto my-auto px-10">
-                
+              <v-col cols="6" md="6" class="mx-auto my-auto px-10">                
                 <p class="h4-1">I have been going to college since 2014, I have had a few different routes of possible career paths. I have landed on Programming and software development. I have enjoyed the challenge of coding and trying to solve a puzzle. I have a Personal goal of looking at all coding problems as a challenge instead of an actual problem. </p>          
               </v-col>
             </v-row>
@@ -47,37 +42,44 @@
           :key="i"
           :color="year.color"
           :icon="year.icon"
-          fill-dot
-        >
+          fill-dot>
           <template v-slot:opposite>
             <span
               :class="`headline font-weight-bold ${year.color}--text`"
               v-text="year.date"
             ></span>
           </template>
-          <v-card :color="year.color" dark>
+          <v-lazy v-model="isActive" :options="{ threshold: 0.5}" min-height="200">
+          <v-card :color="year.color" dark :class="`animate__animated ${year.animation}`">
             <v-card-title> {{year.job}} - {{year.company}}</v-card-title>
             <v-card-text class="white grey--text text--darken-4">
               <p>{{year.description}}</p>
             </v-card-text>
           </v-card>
-          <!-- <div class="py-4">
-            <h2 :class="`headline font-weight-light mb-4 ${year.color}--text`">
-              {{year.job}} - {{year.company}}
-            </h2>
-            <div>
-              {{year.description}}
-            </div>
-          </div> -->
+          </v-lazy>
         </v-timeline-item>
       </v-timeline>
     </v-container>
+    <v-container class="card">
+      <v-card class="grey pa-10" >
+        <v-card-title class="justify-center h2 white--text">My Projects</v-card-title>
+        <v-row>
+          <v-card hover max-width="25%" tile class="mt-10 mx-auto wrap" v-for="(card, index) in cards" :key="index">
+          <v-img :src="card.pic" class="align-end">
+          <v-card-title class="justify-center white">{{card.title}}</v-card-title>
+          </v-img>
+        </v-card>
+        </v-row>
+      </v-card>
+    </v-container>
   </v-container>
+  
 </template>
 
 <script>
-  
-
+  import {languages} from '../components/DataFile.js'
+  import {tree} from '../components/DataFile.js'
+  import {cards} from '../components/DataFile.js'
   export default {
     name: 'HomeView',
 
@@ -86,44 +88,10 @@
     },
     data(){
       return{
-        languages: ['C++', 'C#','HTML','CSS','JavaScript','Vue.js','Java'],
-        tree:[
-          {
-            job: 'Customer Service Representative',
-            company: 'Dominos Pizza',
-            icon: 'mdi-briefcase-outline',
-            description: 'Helped build pizza',
-            color: 'amber',
-            color2: '#FFC107',
-            date: '07/2014 - 08/2015'
-          },
-          {
-            job: 'Customer Service Representative',
-            company: 'Dominos Pizza',
-            icon: 'mdi-briefcase-outline',
-            description: 'Helped build pizza',
-            color: 'amber',
-            color2: '#FFC107',
-            date: '07/2014 - 08/2015'
-          },{
-            job: 'Customer Service Representative',
-            company: 'Dominos Pizza',
-            icon: 'mdi-briefcase-outline',
-            description: 'Helped build pizza',
-            color: 'amber',
-            color2: '#FFC107',
-            date: '07/2014 - 08/2015'
-          },
-          {
-            job: 'Customer Service Representative',
-            company: 'Dominos Pizza',
-            icon: 'mdi-briefcase-outline',
-            description: 'Helped build pizza',
-            color: 'amber',
-            color2: '#FFC107',
-            date: '07/2014 - 08/2015'
-          },
-        ]
+        languages: languages,
+        tree: tree,
+        cards: cards
+        
       }
     }
   }
@@ -131,6 +99,10 @@
 <style scoped>
 .theme--light.v-timeline:before {
     background: white;
+}
+.wrap{
+  display: flex;  
+  flex-wrap: wrap;
 }
 @media only screen and (min-width: 600px) {
  .h1{
