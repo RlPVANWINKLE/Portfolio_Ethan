@@ -4,15 +4,18 @@
     <v-main class="grey darken-4">
       <router-view/>
     </v-main>
+    <footer-bar/>
   </v-app>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
+import FooterBar from './components/FooterBar.vue'
 export default {
   name: 'App',
   components:{
     NavBar,
+    FooterBar,
   }
 };
 </script>
