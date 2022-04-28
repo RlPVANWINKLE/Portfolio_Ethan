@@ -49,6 +49,14 @@
   }
 
 }
+@media only screen and (max-width: 600px) {
+ .h1{
+  font-size: 8rem;
+  margin-top: 20vh;
+  text-decoration: underline;
+  }
+
+}
 .animate__animated.animate__backInRight{
   --animate-duration: 3s;
 }

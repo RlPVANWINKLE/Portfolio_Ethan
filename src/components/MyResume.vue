@@ -1,8 +1,9 @@
 <template>
     <div>
+      <!-- -->
         <v-container id="resume">
             <h2 class="text-center h2 white--text">RESUME</h2>
-            <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
+            <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown" >
                 <v-timeline-item
                 v-for="(year, i) in tree"
                 :key="i"
@@ -49,30 +50,18 @@ export default {
 .theme--light.v-timeline:before {
     background: white;
 }
-@media only screen and (min-width: 600px) {
-    .h2{
+@media only screen and (min-width: 900px) {
+  .h2{
     font-size: 4rem;
     text-decoration: underline;
     margin-top: 20%;
   }
-  .h4{
-    font-size: 1.5rem;
-    border: 2px solid black;
-    margin-top: 25px;
-  }
-  .h4-1{
-    font-size: 1.5rem;
-  }
-  .card{
-    margin-top: 20vh;
-
-  }
-  .lang{
-    width: 22%;
-  }
-  .img{
-    width: 225px;
-    height: 225px;
+}
+@media only screen and (max-width: 900px) {
+  .h2{
+    font-size: 2.75rem;
+    text-decoration: underline;
+    margin-top: 20%;
   }
 }
 </style>

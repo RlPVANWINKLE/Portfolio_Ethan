@@ -140,3 +140,25 @@ export const languages = [
       title:"Dynamic"
     }
   ]
+  export const nav = [
+    {
+      title: 'Home',
+      goto: 'home'
+    },
+    {
+      title: 'About Me',
+      goto: 'about'
+    },
+    {
+      title: 'My Resume',
+      goto: 'resume'
+    },
+    {
+      title: 'My Portfolio',
+      goto: 'work'
+    },
+    {
+      title: 'Contact Me',
+      goto: 'contact'
+    }
+  ]

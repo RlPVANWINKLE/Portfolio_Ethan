@@ -99,14 +99,14 @@ export default {
 </script>
 <style scoped>
 .h2{
-    font-size: 4rem;
+    font-size: 2.75rem;
     text-decoration: underline;
     margin-top: 20%;
   }
 .myclass.v-sheet.v-card{
     border: 8px solid #FFC107;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 .myclass{
     width: 95%;
 }
@@ -117,7 +117,7 @@ export default {
 @media only screen and (max-width: 1500px) {
 
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 .myclass{
     width: 60%;
 }
