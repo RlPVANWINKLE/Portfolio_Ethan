@@ -51,7 +51,7 @@ export const languages = [
       company: 'Ogden Weber Technical College',
       icon: 'mdi-briefcase-outline',
       // description: 'My main duty was building a small professional relationship with students. Keeping them on track with their school work. In addition to thi si taught small points in a few C# courses. The level of the programming was command line to small GUI applications.',
-      description: ['Assisted other Professors in helping students with Software Engineering Concepts', 'Worked in a team environment'],
+      description: ['Assist other Professors in helping students with Software Engineering Concepts', 'Work in a team environment'],
       color: 'amber',
       color2: '#FFC107',
       date: '01/2022 - CURRENT',
@@ -93,33 +93,64 @@ export const languages = [
   export const cards = [
       {
           pic: require("../images/OTech.png"),
+          cover: require("../images/thumbnails/otech.jpg"),
           title: "Ogden Weber Tech College",
           href: "https://keen-pothos-8bdfa1.netlify.app/#/",
-          animation: "animate__backInLeft"
+          animation: "animate__backInLeft",
+          description: 'Students prior to the website were unable to have immediate access to information pointing them in the direction of their next course or external resources. With that they are also able to now see all the different job options as well as what previous graduates have gone on to accomplish after graduating the program. The Website is also styled and designed to be accessed from a cell phone instead of only a desktop. This allowed for an easy use for students using a cellphone for the information.',
+          client: 'Otech Students',
+          Technologies: 'HTML5, CSS3, Vue.js, Git'
       },
       {
         pic: require("../images/painting.png"),
+        cover: require("../images/thumbnails/buuba.jpg"),
         title: "Bubba's Painting",
         href: "https://bubbaspainting.netlify.app/#/",
-        animation: "animate__backInUp"
+        animation: "animate__backInUp",
+        description:'My Brother has started a painting business that he would like to have a website for. He would like a Contact Us, Gallery, and a home page with a summary of the information. He wants a way for clients to get home quotes for painting that will serve as a challenge for me.',
+        client: 'Bubba’s Painting',
+        Technologies: 'HTML5, CSS3, Vue.js, Git, Vuetify'
+
+    },
+    {
+      pic: require("../images/Capture.jpg"),
+      cover: require("../images/thumbnails/cardeal.jpg"),
+      title: "CarDeal",
+      href: "https://zingy-sfogliatella-04c4c7.netlify.app/",
+      animation: "animate__backInRight",
+      description: 'Using Vue.js and Vuetify.js I created a website to give an estimated price for a used car. Whether the car is running or not running it will be purchased. There are examples of previously purchased vehicles and a section for reviews.',
+      client: 'CarDeal',
+      Technologies: 'HTML5, CSS3, Vue.js, Git, Vuetify'
     },
     {
         pic: require("../images/oscars.png"),
+        cover: require("../images/thumbnails/oscars.png"),
         title: "Oscars Meats",
         href: "",
-        animation: "animate__backInRight"
+        animation: "animate__backInLeft",
+        description: 'This client is a butcher shop in downtown Ogden, Utah. Oscars Meats has been around for 70 years. This company still takes all orders over the phone. My assignment with this client is to allow Oscar’s clients to be able to order online. They would like a simple email to be sent when ordering and pay at the store. Many of the employees like this simplicity of paper. With this, an email can be printed in order for them to still see it on paper.',
+        client: 'Oscar’s Meats',
+        Technologies: 'HTML5, CSS3, Vue.js, Git, Vuetify'
     },
     {
         pic: require("../images/calc.png"),
+        cover: require("../images/thumbnails/math.jpg"),
         title: "Math Practice",
         href: "",
-        animation: "animate__backInDown"
+        animation: "animate__backInDown",
+        description:'My sister and her friends want the ability to practice their math while at home. There are other websites out there that help practice math, however they are wanting specifics in order to study and practice.',
+        client: 'Children',
+        Technologies: 'HTML5, CSS3, Vue.js, Git, Vuetify'
     },
     {
       pic: require("../images/heart.jpg"),
+      cover: require("../images/thumbnails/heart.jpg"),
       title: "Body Ninja",
       href: "",
-      animation: "animate__backInDown"
+      animation: "animate__backInRight",
+      description:'Body Ninja is ran by a Woman Named Chloe. She runs a “Bootcamp. ” She is having a hard time getting poeple to join. She would like a website that  can have more information and contact. Would also like a Venmo link to pay for her class.',
+      client: 'BodyNinja',
+      Technologies: 'HTML5, CSS3, Vue.js, BootStrap, SCSS, Git'
   },
   ]
   export const about = [

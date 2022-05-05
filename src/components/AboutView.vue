@@ -23,7 +23,7 @@
               </v-col>
               <v-col cols="6" md="6" class="mx-auto my-auto px-10">  
                 <v-img src="../images/profile.jpg" class="img rounded-circle mx-auto"></v-img>              
-                <p class="h4-1">I am a 23 year old male, I enjoy the outdoors as much as I Enjoy being indoors. Im always up for Video games or a camping trip. Ever since I was a kid I have loved computers. II've always been facinated by the newest technology, whether that be the next android or the next graphics card. I have a very supportive wife who looks for success in all we do. I am always looking for my next challenge. If I dont know how to do something, thats my next mission and goal.</p>          
+                <p class="h4-1">I am a 23 year old male, I enjoy the outdoors as much as I Enjoy being indoors. Im always up for Video games or a camping trip. Ever since I was a kid I have loved computers. II've always been facinated by the newest technology, whether that be the next android or the next graphics card. I have a very supportive wife who looks for success in all we do. I am always looking for my next challenge. If I dont know how to do something, that is my next mission and goal.</p>          
               </v-col>
             </v-row>
           </v-row >
@@ -31,7 +31,7 @@
             <v-row>
                <v-col cols="12" class="mx-auto my-auto px-1">  
                 <v-img src="../images/profile.jpg" class="img rounded-circle mx-auto"></v-img>              
-                <p class="h4-1 pt-4">I am a 23 year old male, I enjoy the outdoors as much as I Enjoy being indoors. Im always up for Video games or a camping trip. Ever since I was a kid I have loved computers. I've always been facinated by the newest technology, whether that be the next android or the next graphics card. I have a very supportive wife who looks for success in all we do. I am always looking for my next challenge. If I dont know how to do something, thats my next mission and goal.</p>          
+                <p class="h4-1 pt-4">I am a 23 year old male, I enjoy the outdoors as much as I Enjoy being indoors. Im always up for Video games or a camping trip. Ever since I was a kid I have loved computers. I've always been facinated by the newest technology, whether that be the next android or the next graphics card. I have a very supportive wife who looks for success in all we do. I am always looking for my next challenge. If I dont know how to do something, that is my next mission and goal.</p>          
               </v-col>
             </v-row>
             <v-row>

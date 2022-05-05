@@ -8,7 +8,7 @@
             <v-spacer></v-spacer>
             <span  class="mx-5 hover" @click="goto(navs.goto);" v-for="(navs, index) in nav" :key="index"><strong>{{navs.title}}</strong></span >
         </v-app-bar> 
-        <v-toolbar app class="mobile">
+        <v-toolbar app class="mobile"  >
             <v-app-bar-nav-icon @click="menu = !menu"></v-app-bar-nav-icon>
             <v-toolbar-title class="text-uppercase">
                 <span class="font-weight-bold amber--text under">Ethan</span>
@@ -16,7 +16,7 @@
             </v-toolbar-title>
             <v-spacer></v-spacer>
         </v-toolbar> 
-        <v-navigation-drawer app v-model="menu" class="grey lighten-2" >
+        <v-navigation-drawer clipped app v-model=menu class="grey lighten-2" disable-resize-watcher>
           <v-img  src='../images/profile.jpg' class="rounded-circle hover ma-5"  @click="menu = !menu"></v-img>
           <v-container class="" @click="menu = !menu">
             <h1 class="text-h3 text-decoration-underline text-center my-10">Menu</h1>

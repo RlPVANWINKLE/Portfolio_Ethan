@@ -1,5 +1,5 @@
 <template>
-  <v-container id="home" >
+  <v-container app id="home" >
     <v-row align="center" justify="center"> 
       <v-col cols="6" md="4">
         <h1 class=" h1 white--text text-left animate__animated animate__fadeInLeft " >  Hello, <br> I'm Ethan  </h1>
